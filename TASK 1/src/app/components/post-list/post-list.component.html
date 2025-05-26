@@ -1,0 +1,36 @@
+<div class="post-list-container fade-in">
+  <div class="section-header">
+    <h2 class="section-title">Explore Stories</h2>
+    <p class="section-subtitle">Discover thoughtful articles and inspiring ideas from our community</p>
+  </div>
+  
+  <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+  
+  <div *ngIf="!isLoading && posts.length === 0" class="no-posts">
+    <h3 class="no-posts-title">No stories yet</h3>
+    <p class="no-posts-message">Be the first to share your thoughts with our community</p>
+    <a routerLink="/create" class="create-post-btn">
+      <span>✏️</span>
+      Write your first story
+    </a>
+  </div>
+  
+  <div *ngIf="!isLoading && posts.length > 0" class="posts-grid">
+    <article *ngFor="let post of posts" class="post-card slide-in">
+      <div class="post-content">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <div class="post-meta">
+          <span class="post-date">
+            <span>📅</span>
+            {{ formatDate(post.createdAt) }}
+          </span>
+        </div>
+        <p class="post-excerpt">{{ post.content }}</p>
+        <a href="#" class="read-more">
+          Read more
+          <span>→</span>
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
