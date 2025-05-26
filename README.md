@@ -18,10 +18,10 @@ Allow users to create and view blog posts.
 
 ### 🖼️ Screenshots
 
-<img src="images/Screenshot 2025-05-26 204944.png" width="600"/>
-<img src="images/Screenshot 2025-05-26 204959.png" width="600"/>
-<img src="images/Screenshot 2025-05-26 205805.png" width="600"/>
-<img src="images/Screenshot 2025-05-26 205825.png" width="600"/>
+<img src="Images/Screenshot 2025-05-26 204944.png" width="600"/>
+<img src="Images/Screenshot 2025-05-26 204959.png" width="600"/>
+<img src="Images/Screenshot 2025-05-26 205805.png" width="600"/>
+<img src="Images/Screenshot 2025-05-26 205825.png" width="600"/>
 
 ### 🧱 Tech Stack
 
